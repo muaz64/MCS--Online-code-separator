@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600;700&display=swap');
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --dark: #0f172a;
+        }
+
+        * { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Fira Code', monospace; }
+
+        body {
+            background: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .output-box {
+            font-family: 'Fira Code', monospace;
+            font-size: 13px;
+            scrollbar-width: thin;
+            scrollbar-color: #475569 transparent;
+        }
+
+        .output-box::-webkit-scrollbar { width: 6px; }
+        .output-box::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
+
+        .tab-active {
+            border-bottom: 3px solid var(--primary);
+            color: var(--primary);
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-slide { animation: slideIn 0.3s ease-out forwards; }
+
+        #preview-container {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        #preview-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
