@@ -154,12 +154,13 @@ p { color: #94a3b8; }
 </head>
 <body>
 <div class="card" id="btn">
+<h1>Welcome to MCS--Online code separator</h1>
 <h2>Click Me</h2>
 <p>Watch the console or alert</p>
 </div>
 <script>
 document.getElementById('btn').onclick = () => {
-    alert('Hello! You are using Code Separator Pro.');
+    alert('Hello! You are using MCS--Online code separator.');
     console.log('Action performed!');
 }
 <\/script>
